@@ -2,40 +2,30 @@ import { motion } from 'framer-motion'
 import React from 'react'
 
 export default () => {
-	const initial = { opacity: 0 }
-	const animate = { opacity: 1 }
+	const initial = { scale: 0 }
+	const animate = { rotate: 180, scale: 1 }
+	const transition = {
+		type: 'spring',
+		stiffness: 260,
+		damping: 20,
+	}
+
+	const AnimatedDiv = () => (
+		<motion.div
+			className='card'
+			initial={initial}
+			animate={animate}
+			transition={transition}
+		/>
+	)
 
 	return (
 		<div className='container'>
-			<motion.span
-				initial={initial}
-				animate={animate}
-				className='home-message'
-			>
-				I'm working on that.
-			</motion.span>
-			<motion.span
-				initial={initial}
-				animate={animate}
-				className='home-message'
-			>
-				{'Come back later, please :)'}
-			</motion.span>
-			<motion.span
-				initial={initial}
-				animate={animate}
-				className='advice'
-			>
-				(click{' '}
-				<motion.a
-					initial={initial}
-					animate={animate}
-					href='https://github.com/richardqcarvalho/richardqcarvalho'
-				>
-					here
-				</motion.a>{' '}
-				if you wanna take a look on how it's going)
-			</motion.span>
+			<div className='wrapper'>
+				<AnimatedDiv />
+				<AnimatedDiv />
+				<AnimatedDiv />
+			</div>
 		</div>
 	)
 }

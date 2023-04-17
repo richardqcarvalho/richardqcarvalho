@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	flex-direction: column;
+	position: relative;
 }
 
 #root {
@@ -18,23 +19,34 @@ body {
 }
 
 .container {
-	background-color: #2980b9;
+	background-color: linear-gradient(#3498db, #2980b9);
 	flex: 1;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
-.home-message {
-	color: #ecf0f1;
-	font-size: clamp(2.5rem, calc(1rem + 2vw), 4rem);
-	font-weight: 700;
-	text-align: center;
+.wrapper {
+	background-color: linear-gradient(#2ecc71, #27ae60);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 90vw;
+	height: 90vh;
+	overflow: scroll;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
-.advice {
-	margin-top: 0.5rem;
-	color: #ecf0f1;
-	font-size: clamp(1.3rem, calc(0.5rem + 2vw), 1.6rem);
-	font-weight: 300;
-	text-align: center;
+.wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.card {
+	--size: 3rem;
+	width: clamp(var(--size), calc(var(--size) + 10vw), 12rem);
+	height: clamp(var(--size), calc(var(--size) + 10vw), 12rem);
+	background-color: purple;
+	margin: 1rem;
+	justify-self: center;
 }
