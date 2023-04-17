@@ -1,0 +1,43 @@
+name: Profile Site CI
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setting up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+          cache: 'npm'
+      - name: Installing dependencies
+        run: npm i
+      - name: Building
+        run: npm run build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setting up GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Uploading files
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './docs'
+      - name: Deploying
+        id: deploy
+        uses: actions/deploy-pages@v1
