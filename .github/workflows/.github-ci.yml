@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,9 +29,6 @@ jobs:
         run: npm i
       - name: Building
         run: npm run build
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
       - name: Setting up GitHub Pages
         uses: actions/configure-pages@v3
       - name: Uploading files
