@@ -1,15 +1,41 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 export default () => {
+	const initial = { opacity: 0 }
+	const animate = { opacity: 1 }
+
 	return (
 		<div className='container'>
-			<span className='home-message'>I'm working on that.</span>
-			<span className='home-message'>{'Come back later, please :)'}</span>
-			<span className='advice'>
+			<motion.span
+				initial={initial}
+				animate={animate}
+				className='home-message'
+			>
+				I'm working on that.
+			</motion.span>
+			<motion.span
+				initial={initial}
+				animate={animate}
+				className='home-message'
+			>
+				{'Come back later, please :)'}
+			</motion.span>
+			<motion.span
+				initial={initial}
+				animate={animate}
+				className='advice'
+			>
 				(click{' '}
-				<a href='https://github.com/richardqcarvalho/richardqcarvalho'>here</a>{' '}
+				<motion.a
+					initial={initial}
+					animate={animate}
+					href='https://github.com/richardqcarvalho/richardqcarvalho'
+				>
+					here
+				</motion.a>{' '}
 				if you wanna take a look on how it's going)
-			</span>
+			</motion.span>
 		</div>
 	)
 }
