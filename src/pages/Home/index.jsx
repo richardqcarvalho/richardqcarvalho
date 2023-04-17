@@ -30,7 +30,7 @@ export default () => {
 				<motion.a
 					initial={initial}
 					animate={animate}
-					href='https://github.com/richardqcarvalho/richardqcarvalho'
+					href='https://github.com/richardqcarvalho/richardqcarvalho/tree/dev'
 				>
 					here
 				</motion.a>{' '}
