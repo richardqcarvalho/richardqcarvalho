@@ -2,89 +2,89 @@
 
 div,
 body {
-	display: flex;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	flex-direction: column;
-	position: relative;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  position: relative;
 }
 
 #root {
-	width: 100vw;
-	height: 100vh;
-	width: 100svw;
-	height: 100svh;
-	font-family: 'Lato';
+  width: 100vw;
+  height: 100vh;
+  width: 100svw;
+  height: 100svh;
+  font-family: 'Lato';
 }
 
 .container {
-	background: linear-gradient(#2980b9, #3498db);
-	flex: 1;
-	justify-content: center;
-	align-items: center;
+  background: linear-gradient(#2980b9, #3498db);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
-	background: linear-gradient(#3498db, #2980b9);
-	display: grid;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	grid-template-columns: repeat(2, 1fr);
-	width: 90vw;
-	height: 90vh;
-	overflow: scroll;
-	border-radius: 1rem;
-	padding: 2.5vw;
+  background: linear-gradient(#3498db, #2980b9);
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90vw;
+  height: 90vh;
+  overflow: scroll;
+  border-radius: 1rem;
+  padding: 2.5vw;
 
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .flex {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .card {
-	--size: 37.5vw;
-	width: var(--size);
-	height: var(--size);
-	background: linear-gradient(#2980b9, #3498db);
-	border-radius: 1rem;
-	margin: 2.5vw;
-	justify-self: center;
-	align-self: center;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
+  --size: 37.5vw;
+  width: var(--size);
+  height: var(--size);
+  background: linear-gradient(#2980b9, #3498db);
+  border-radius: 1rem;
+  margin: 2.5vw;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .name {
-	color: #fff;
-	font-weight: bolder;
-	font-size: 1.5rem;
-	text-align: center;
-	word-break: break-all;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-align: center;
+  word-break: break-all;
 }
 
 .info {
-	color: #fff;
-	font-weight: bolder;
-	font-size: 1rem;
-	text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .name-back {
-	color: #2980b9;
+  color: #2980b9;
 }
 
 .back {
-	background: linear-gradient(#bdc3c7, #ecf0f1);
+  background: linear-gradient(#bdc3c7, #ecf0f1);
 }

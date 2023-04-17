@@ -6,18 +6,18 @@ import Repos from './pages/repos'
 import './styles.css'
 
 createRoot(document.getElementById('root')).render(
-	<StrictMode>
-		<BrowserRouter>
-			<Routes>
-				<Route
-					path='/'
-					element={<Home />}
-				/>
-				<Route
-					path='/repos'
-					element={<Repos />}
-				/>
-			</Routes>
-		</BrowserRouter>
-	</StrictMode>,
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/'
+          element={<Home />}
+        />
+        <Route
+          path='/repos'
+          element={<Repos />}
+        />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>,
 )

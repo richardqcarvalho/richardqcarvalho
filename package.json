@@ -1,25 +1,25 @@
 {
-	"name": "richardqcarvalho",
-	"version": "1.0.0",
-	"repository": "https://github.com/richardqcarvalho/richardqcarvalho.git",
-	"author": "Richard Carvalho <richardcarvalhooo@gmail.com>",
-	"license": "MIT",
-	"devDependencies": {
-		"@vitejs/plugin-react": "^3.1.0",
-		"prettier": "^2.8.7",
-		"vite": "^4.2.1"
-	},
-	"dependencies": {
-		"framer-motion": "^10.12.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-loading": "^2.0.3",
-		"react-router-dom": "^6.10.0",
-		"uuid": "^9.0.0"
-	},
-	"type": "module",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build"
-	}
+  "name": "richardqcarvalho",
+  "version": "1.0.0",
+  "repository": "https://github.com/richardqcarvalho/richardqcarvalho.git",
+  "author": "Richard Carvalho <richardcarvalhooo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
+    "prettier": "^2.8.7",
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "framer-motion": "^10.12.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^6.10.0",
+    "uuid": "^9.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build"
+  }
 }
