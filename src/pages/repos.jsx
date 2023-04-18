@@ -40,7 +40,7 @@ export default () => {
       .then(response => response.json())
       .then(repos =>
         setRepos([
-          { id: uuid(), name: 'back', html_url: 'http://localhost:5173' },
+          { id: uuid(), name: 'back', html_url: location.origin },
           ...repos,
         ]),
       )

@@ -53,6 +53,14 @@ body {
   text-align: center;
 }
 
+.advice {
+  margin-top: 0.5rem;
+  color: #ecf0f1;
+  font-size: clamp(1.3rem, calc(0.5rem + 2vw), 1.6rem);
+  font-weight: 300;
+  text-align: center;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -67,7 +75,7 @@ body {
   --size: 37.5vw;
   width: var(--size);
   height: var(--size);
-  background: linear-gradient(#2980b9, #3498db);
+  background: linear-gradient(#3498db, #2980b9);
   border-radius: 1rem;
   margin: 2.5vw;
   justify-self: center;
