@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       lang='en'
       className={`w-full h-full ${font.className}`}
     >
-      <body className='w-full h-full from-red-600 to-green-500'>
+      <body className='w-full h-full bg-blue-400 flex flex-col justify-center items-center'>
         {children}
       </body>
     </html>
