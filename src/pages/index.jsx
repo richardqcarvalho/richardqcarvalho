@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-export default () => {
+export default function Home() {
 	const initial = { opacity: 0 }
 	const animate = { opacity: 1 }
 
