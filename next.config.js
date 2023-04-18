@@ -3,6 +3,6 @@
  */
 
 export default {
-	output: 'export',
-	distDir: 'docs',
+  output: 'export',
+  distDir: 'docs',
 }

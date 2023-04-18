@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { v4 as uuid } from 'uuid'
 import Loading from '../components/loading'
 
-export default () => {
+const Repos = () => {
   const AnimatedDiv = ({ repo, back }) => {
     console.log({ repo })
     return (
@@ -64,3 +64,5 @@ export default () => {
     </div>
   )
 }
+
+export default Repos

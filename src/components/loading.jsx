@@ -1,13 +1,13 @@
 import React from 'react'
-import Loading from 'react-loading'
+import ReactLoading from 'react-loading'
 
-export default () => {
+const Loading = () => {
   const widthAndHeight = '15vw'
 
   return (
     <div className='container'>
       <div className='wrapper flex'>
-        <Loading
+        <ReactLoading
           color='#3498db'
           width={widthAndHeight}
           height={widthAndHeight}
@@ -17,3 +17,5 @@ export default () => {
     </div>
   )
 }
+
+export default Loading

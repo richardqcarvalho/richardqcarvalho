@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { v4 as uuid } from 'uuid'
 
-export default () => {
+const Home = () => {
   const AnimatedDiv = ({ option }) => {
     console.log({ option })
     return (
@@ -43,3 +43,5 @@ export default () => {
     </div>
   )
 }
+
+export default Home
