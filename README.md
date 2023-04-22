@@ -13,3 +13,7 @@ I'm Richard, a Brazilian front[and a little back]-end developer who likes to lea
 <p>
 <img src='https://github-readme-stats.vercel.app/api?username=richardqcarvalho&hide=contribs,stars&show_icons=true&count_private=true&bg_color=0d1117&ring_color=ffffff&icon_color=ffffff&text_color=ffffff&border_color=30363d&hide_title=true' />
 </p>
+
+<p>
+<img src='https://github-readme-stats.vercel.app/api/top-langs?username=richardqcarvalho&langs_count=6&count_private=true&exclude_repo=starships-stops-calculator,be-the-hero&hide_title=true&bg_color=0d1117&text_color=ffffff&border_color=30363d' />
+</p>
