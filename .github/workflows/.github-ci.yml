@@ -1,4 +1,4 @@
-name: Profile Site CI
+name: Personal Site
 
 on:
   push:
