@@ -1,6 +1,7 @@
-import { NextConfig } from 'next'
-
-const config: NextConfig = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const config = {
   output: 'export',
   distDir: 'docs',
   experimental: {
